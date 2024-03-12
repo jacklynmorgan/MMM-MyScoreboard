@@ -66,6 +66,13 @@ Module.register("MMM-MyScoreboard",{
     "NCAAM_MM": {provider: "ESPN",logoFormat: "url"},
     "NCAAW": {provider: "ESPN", logoFormat: "url"},
     "WNBA": {provider: "ESPN", logoFormat: "url"},
+    //NASCAR leagues
+    "FORMULA_1": "racing/f1",
+    "NASCAR_PREMIER": "racing/nascar-premier",
+    "IRL": "racing/irl",
+    "NASCAR_SECONDARY": "racing/nascar-secondary",
+    "NASCAR_TRUCK": "racing/nascar-truck",
+    "NHRA": "racing/nhra",
 
 
     //International Soccer
