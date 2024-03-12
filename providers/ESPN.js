@@ -7,7 +7,7 @@
   Provides scores for
     NCAAF (College Football, FBS Division)
     NCAAM (College Basketball. Division I)
-    NCAAM_MM (College Basketball, March Madness Torunament)
+    NCAAM_MM (College Basketball, March Madness Tournament)
     NBA (National Basketball Association)
     Every fucking Soccer league ESPN supports
 
@@ -24,12 +24,12 @@
   not require an API key. It's free and clear.  Let's not
   abuse this.  Please do not modify this to hammer the API
   with a flood of calls, otherwise it might cause ESPN to
-  lock this it down.
+  lock this down.
 
   Data is polled on demand per league configured in the
-  front end. Each time the front end makes a request for a
+  front end. Each time the front end requests a
   particular league a request for JSON is made to ESPN's
-  servers.  The front end polls every two miuntes.
+  servers.  The front end polls every two minutes.
 
 */
 
@@ -43,13 +43,21 @@ module.exports = {
 
   LEAGUE_PATHS: {
 
+    //NASCAR leagues
+    "FORMULA_1": "racing/f1",
+    "NASCAR_PREMIER": "racing/nascar-premier",
+    "IRL": "racing/irl",
+    "NASCAR_SECONDARY": "racing/nascar-secondary",
+    "NASCAR_TRUCK": "racing/nascar-truck",
+    "NHRA": "racing/nhra",
+
     //North American Leagues
     "NCAAF": "football/college-football",
     "NBA": "basketball/nba",
     "WNBA": "basketball/wnba",
     "NCAAM": "basketball/mens-college-basketball",
     "NCAAM_MM": "basketball/mens-college-basketball",
-    "NCAAW" : "basketball/womens-college-basketball/",
+    "NCAAW": "basketball/womens-college-basketball",
 
     //International Soccer
     "AFC_ASIAN_CUP": "soccer/afc.cup",
